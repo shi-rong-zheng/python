@@ -83,23 +83,87 @@
 #   0   1   1   2   3   5   8   13   21   34    55...
 #   a   b  a=a+b
 #
-a = 0
-b = 1
-numbers=[0]
-number=int(input("请输入斐波那契数列:>"))
-for i in range(number):
-    # 如果不采用迭代，只是用循环如何实现
-    # a,b=b,a+b相当于:
-    temp=b#先保存b的原值
-    b=a+b#赋b新值
-    a=temp#将b的原值赋予a
-    numbers.append(a)
-print(numbers)
-    
-    
-    
-    
-    
+# a = 0
+# b = 1
+# numbers=[0]
+# number=int(input("请输入斐波那契数列:>"))
+# for i in range(number):
+#     # 如果不采用迭代，只是用循环如何实现
+#     # a,b=b,a+b相当于:
+#     temp=b#先保存b的原值
+#     b=a+b#赋b新值
+#     a=temp#将b的原值赋予a
+#     numbers.append(a)
+# print(numbers)
+#
+
+#三个数，从小到大
+# a=int(input('a='))
+# b=int(input('b='))
+# c=int(input('c='))
+# list=[a,b,c]
+# list.sort()
+# for i in range(len(list)):
+#     print(list[i],end=' ')
+
+#使用time模块的sleep()函数
+# import time
+# list=[2,3,4,5,6,7,8,9,0]
+# for i in range(len(list)):
+#     list.sort()
+#     print(list[i],end=' ')
+#     time.sleep(0.5)
+
+# import time
+# print(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))
+# time.sleep(1)
+# print(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))
+
+#加上循环可以设置为一个时间阅读器
+# import time
+# while(True):
+#     time.sleep(1)
+#     print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
+
+#判断101-200之间有多少
+# for i in range(101,201):
+#     for j in range(2,i):
+#        if(i%j==0):
+#            break
+#     else:
+#         print(i,end=' ')
+
+
+#优化代码
+# for i in range(101,201,2):
+#     for j in range(2,i):
+#        if(i%j==0):
+#            break
+#     else:
+#         print(i,end=' ')
+
+#再优化代码
+# from math import sqrt
+# for i in range(101,201):
+#     for j in range(2,int(sqrt(i))+1):
+#         if(i%j==0):
+#             break
+#     else:
+#         print(i,end=' ')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     
     
